@@ -1,0 +1,75 @@
+---
+interface Props {
+    title: string;
+}
+//  import "../styles/Layout.css";
+import Whatsapp from '../components/Whatsapp.astro';
+
+const { title } = Astro.props;
+
+
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nerina Parisi</title>
+</head>
+<body >
+    <main class="flex flex-col items-center justify-center min-h-screen">
+        <div class="pt-10  items-center">
+            <img class="w-50 " src="Logo-vector.png" alt="">
+        </div>
+        <slot/>
+        <nav class="flex flex-col items-center justify-between w-full text-center sm:justify-evenly sm:flex-row pb-8">
+            <a class="text-black text-bold py-2 px-3 rounded-md mb-2 " href="/">Arte Visual</a>
+            <a class="text-black text-bold py-2 px-3 rounded-md mb-2" href="/about">Acerca de mi</a>
+            <a class="text-black text-bold py-2 px-3 rounded-md mb-2" href="/contact">Contacto</a>
+        </nav>
+    </main>
+    <div class=" bg-red-200 text-gray-900 pt-8 pb-8 ">
+    
+        <div class="flex justify-evenly pb-8">
+            <a href="" target="_blank" rel="noopener">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+                  </svg>
+            </a>
+            <a href="https://www.instagram.com/negri_tadecolores/" target="_blank" rel="noopener">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z" />
+                    <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                    <path d="M16.5 7.5l0 .01" />
+                  </svg>
+
+            </a>
+              <a href="" target="_blank" rel="noopener">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-pinterest" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M8 20l4 -9" />
+                    <path d="M10.7 14c.437 1.263 1.43 2 2.55 2c2.071 0 3.75 -1.554 3.75 -4a5 5 0 1 0 -9.7 1.7" />
+                    <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
+                  </svg>
+
+              </a>
+             
+        </div>
+        
+        <div class="text-center ">
+            <p>&copy;  {new Date().getFullYear()} - Patuka Technologies</p>
+            <p>Todos los derechos reservados</p>
+        </div>
+        
+        
+        
+    </div>
+
+    
+    <Whatsapp/>
+    
+</body>
+
+</html>

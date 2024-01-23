@@ -1,0 +1,58 @@
+[
+    
+    
+    {
+        "id":"1",
+        "title":"La Laranja Melancolica",
+        "description":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate, quam!",
+        "img":"https://media.istockphoto.com/id/471006158/es/foto/fondo-de-textura-de-arte-pintado.jpg?s=1024x1024&w=is&k=20&c=81OYHrkLYkgSJlWBWdEnG-uezCvSMUJ_QV2hZpAEmTw=",
+        "has1":"#acuarela",
+        "has2":"#abstracto",
+        "has3":"#ama",
+        "success": true,
+        "color": "red-200"
+    },
+    {   "id":"2",
+        "title":"Nuevayorklandia con bufanda",
+        "description":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate, quam!",
+        "img":"https://media.istockphoto.com/id/1063319744/es/foto/skyline-ciudad-vista-con-reflejos-en-el-agua-original-pintura-al-%C3%B3leo-sobre-lienzo.jpg?s=1024x1024&w=is&k=20&c=lTN7oMZTBpcFyprfqsR_uVqUwbVrJPHkLsnrgDEzfD8=",
+        "has1":"#oleo",
+        "has2":"#ciudad",
+        "has3":"#impresionismo",
+        "success": true,
+        "color": "red-200"
+    },
+    {
+        "id":"3",
+        "title":"El gato me volco las pinturas",
+        "description":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate, quam!",
+        "img":"https://media.istockphoto.com/id/638820876/es/foto/macro-primer-plano-de-pintura-al-%C3%B3leo-de-diferentes-colores-acr%C3%ADlico-de-colores.jpg?s=1024x1024&w=is&k=20&c=92B8Km5bHWHwxnXd6iAkHw1-ngg9t8yPTuLEz9QZr80=",
+        "has1":"#abstracto",
+        "has2":"#colores",
+        "has3":"#manchas",
+        "success": false,
+        "color": "red-200"
+    },
+    {
+        "id":"4",
+        "title":"El volcan de Arroyito",
+        "description":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate, quam!",
+        "img":"https://media.istockphoto.com/id/1134512518/es/foto/abstracto-pintado-a-mano-arte-fondo-sobre-lienzo.jpg?s=1024x1024&w=is&k=20&c=EuwoPIg9aO2MxAYfC1KkBNCnbXkQtk6ZSIMH9hDd7e0=",
+        "has1":"#crayon",
+        "has2":"#dadaismo",
+        "has3":"#paisaje",
+        "success": true,
+        "color": "red-200"
+    },
+    {
+        "id":"4",
+        "title":"Corazon de dos bochas",
+        "description":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate, quam!",
+        "img":"https://images.pexels.com/photos/1193743/pexels-photo-1193743.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "has1":"#plasticola",
+        "has2":"#manchas",
+        "has3":"#surrealismo",
+        "success": true,
+        "color": "red-200"
+    }
+]

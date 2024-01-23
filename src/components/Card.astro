@@ -1,0 +1,72 @@
+---
+import data from "../data/data.json"
+
+interface Props {
+  title: string
+  description: string | null
+  img: string
+  has1: string
+  has2: string
+  has3: string
+  color: string
+  
+}
+
+const {  title, description, img, has1, has2, has3 , color} = Astro.props;
+
+
+console.log(color)
+
+---
+
+<style>
+  /* Estilo para la ventana emergente */
+  #imagenEmergente {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 80%;
+    max-height: 80%;
+  }
+
+  /* Estilo para el fondo oscuro de la ventana emergente */
+  #fondoOscuro {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+</style>
+
+<div class="max-w-sm rounded-xl overflow-hidden shadow-lg mb-8 flex flex-col ">
+  <img id='imagenClickeable' class="w-full" src={img} alt="Sunset in the mountains">
+  <div class="px-6 py-4">
+    <div class="font-bold text-xl mb-2">{title}</div>
+    <p class="text-gray-700 text-base">{description}</p>
+  </div>
+  <div class="text-center justify-between py-6 gap-4 space-x-4">
+    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 ">{has1}</span>
+    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 ">{has2}</span>
+    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 ">{has3}</span>
+  </div>
+  <button class={` rounded-lg m-4 p-2 font-bold text-gray-900 bg-${color}`} >Ver más</button>
+</div>
+
+<div id='fondoOscuro'></div>
+<div id='imagenEmergente'>
+  <img src={img} alt="Imagen">
+  <button id='cerrarBtn'>Cerrar</button>
+</div>
+<script>
+  const imagenClickeable= document.getElementById('imagenClickeable');
+  const fondoOscuro = document.getElementById('fondoOscuro');
+  const imagenEmergente = document.getElementById('imagenEmergente');
+  const cerrarBtn = document.getElementById('cerrarBtn');
+
+</script>
+

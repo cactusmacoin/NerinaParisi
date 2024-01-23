@@ -1,0 +1,71 @@
+---
+import Card from "../components/Card.astro"
+import data from "../data/data.json"
+
+
+
+console.log(data)
+---
+
+<header class="pb-4 pt-2 px-4 mx-auto items-center flex flex-col max-w-xl    ">
+    
+    
+    <div class="mx-auto text-center mb-20 lg:mb-16 items-center ">
+         
+        <h2 class="mb-4 text-5xl tracking-tight font-extrabold text-gray-800">Arte Visual</h2>
+        <p class="font-light text-gray-500 sm:text-xl dark:text-gray-400">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non repudiandae fuga aliquam veniam, dignissimos eaque blanditiis ipsa dolores ex possimus quae quisquam.
+    </div>
+    
+        {data.map(({title, description, img, has1, has2, has3,color})=>(
+        
+        <Card 
+       
+       title={title}
+       description={description}
+       img={img}
+       has1={has1}
+       has2={has2}
+       has3={has3}
+       color={color}
+       />
+   ))}
+    
+   
+    
+    
+    
+        <script>
+  
+  const imagenClickeable = document.getElementById('imagenClickeable');
+  const fondoOscuro = document.getElementById('fondoOscuro');
+  const imagenEmergente = document.getElementById('imagenEmergente');
+  const cerrarBtn = document.getElementById('cerrarBtn');
+
+  if (imagenClickeable) {
+    imagenClickeable.addEventListener('click', abrirVentanaEmergente);
+   
+  }
+
+  if (cerrarBtn) {
+    cerrarBtn.addEventListener('click', cerrarVentanaEmergente);
+  }
+
+  function abrirVentanaEmergente() {
+    if (fondoOscuro && imagenEmergente) {
+      fondoOscuro.style.display = 'block';
+      imagenEmergente.style.display = 'block';
+    }
+  }
+
+  function cerrarVentanaEmergente() {
+    if (fondoOscuro && imagenEmergente) {
+      fondoOscuro.style.display = 'none';
+      imagenEmergente.style.display = 'none';
+    }
+  }
+  
+</script>
+
+   
+    
+</header>
