@@ -1,5 +1,4 @@
 ---
-import data from "../data/data.json"
 
 interface Props {
   title: string
@@ -51,7 +50,7 @@ const {  title, description, img, has1, has2, has3 , color} = Astro.props;
     <span class="inline-block bg-gray-200 rounded-full my-2 px-3 py-1 text-sm font-semibold text-gray-700 ">{has2}</span>
     <span class="inline-block bg-gray-200 rounded-full my-2 px-3 py-1 text-sm font-semibold text-gray-700 ">{has3}</span>
   </div>
-  <button class={` rounded-lg m-4 p-2 font-bold text-gray-900 bg-${color}`} >Ver más</button>
+  <button class={`rounded-lg m-4 p-2  text-gray-700 bg-${color}`} >Ver más</button>
 </div>
 
 <div id='fondoOscuro'></div>
